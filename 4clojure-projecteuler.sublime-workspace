@@ -4,6 +4,18 @@
 		"selected_items":
 		[
 			[
+				"sma",
+				"smallest-multiple"
+			],
+			[
+				"sm",
+				"smallest-multiple"
+			],
+			[
+				"fac",
+				"factors"
+			],
+			[
 				"h",
 				"height"
 			],
@@ -502,23 +514,56 @@
 			[
 				"ren",
 				"render"
-			],
-			[
-				"tem",
-				"template"
-			],
-			[
-				"requ",
-				"require"
-			],
-			[
-				"th",
-				"this"
 			]
 		]
 	},
 	"buffers":
 	[
+		{
+			"file": "euler/euler_001.clj",
+			"settings":
+			{
+				"buffer_size": 342,
+				"line_ending": "Unix",
+				"name": "euler_001.clj"
+			}
+		},
+		{
+			"file": "euler/euler_002.clj",
+			"settings":
+			{
+				"buffer_size": 503,
+				"line_ending": "Unix",
+				"name": "euler_002.clj"
+			}
+		},
+		{
+			"file": "euler/euler_003.clj",
+			"settings":
+			{
+				"buffer_size": 483,
+				"line_ending": "Unix",
+				"name": "euler_003.clj"
+			}
+		},
+		{
+			"file": "euler/euler_004.clj",
+			"settings":
+			{
+				"buffer_size": 489,
+				"line_ending": "Unix",
+				"name": "euler_004.clj"
+			}
+		},
+		{
+			"file": "euler/euler_005.clj",
+			"settings":
+			{
+				"buffer_size": 742,
+				"line_ending": "Unix",
+				"name": "euler_005.clj"
+			}
+		}
 	],
 	"build_system": "",
 	"command_palette":
@@ -526,6 +571,14 @@
 		"height": 50.0,
 		"selected_items":
 		[
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"packa",
+				"Package Control: Discover Packages"
+			],
 			[
 				"install",
 				"Package Control: Install Package"
@@ -547,10 +600,6 @@
 				"Package Control: Enable Package"
 			],
 			[
-				"insta",
-				"Package Control: Install Package"
-			],
-			[
 				"fo",
 				"Format: Php"
 			],
@@ -567,7 +616,7 @@
 				"Indentation: Convert to Spaces"
 			]
 		],
-		"width": 480.0
+		"width": 435.0
 	},
 	"console":
 	{
@@ -584,7 +633,10 @@
 	},
 	"file_history":
 	[
+		"/Users/alde/Downloads/tinymudserver-1.0.0/mud.clj",
 		"/Users/alde/Documents/projects/clojure/4clojure-projecteuler/4clojure/4clojure-0040.clj",
+		"/Users/alde/Library/Application Support/Sublime Text 2/Packages/User/Preferences.sublime-settings",
+		"/Users/alde/Library/Application Support/Sublime Text 2/Packages/Default/Preferences.sublime-settings",
 		"/Users/alde/Documents/projects/clojure/4clojure-projecteuler/4clojure-0040.clj",
 		"/Users/alde/Documents/projects/EulerErlang/fibbonachi.erl",
 		"/Users/alde/Documents/projects/test.clj",
@@ -708,10 +760,7 @@
 		"/Users/alde/Documents/projects/pyRad/schema.sql",
 		"/Volumes/MyFiles/HTPC/Nytt/sorter.py",
 		"/Users/alde/Documents/projects/sorter/sorter.py",
-		"/Users/alde/Documents/projects/sorter/sorter.rb",
-		"/Users/alde/Sites/oscommerce/catalog/ext/oneStep/onestepmain.php",
-		"/Users/alde/Sites/oscommerce/catalog/ext/oneStep/themes/default/order_total.mustache",
-		"/Users/alde/Sites/oscommerce/catalog/ext/oneStep/classes/class.oscOrderTotals.php"
+		"/Users/alde/Documents/projects/sorter/sorter.rb"
 	],
 	"find":
 	{
@@ -732,6 +781,12 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"by",
+			"num",
+			"curr",
+			"(+",
+			"lim",
+			"val",
 			"ls",
 			"make_event_hooks",
 			"draw",
@@ -877,8 +932,146 @@
 	"groups":
 	[
 		{
+			"selected": 4,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "euler/euler_001.clj",
+					"settings":
+					{
+						"buffer_size": 342,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								322,
+								322
+							]
+						],
+						"settings":
+						{
+							"auto_name": "euler_001.clj",
+							"syntax": "Packages/Clojure/Clojure.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "euler/euler_002.clj",
+					"settings":
+					{
+						"buffer_size": 503,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								383,
+								383
+							]
+						],
+						"settings":
+						{
+							"auto_name": "euler_002.clj",
+							"syntax": "Packages/Clojure/Clojure.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "euler/euler_003.clj",
+					"settings":
+					{
+						"buffer_size": 483,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								456,
+								456
+							]
+						],
+						"settings":
+						{
+							"auto_name": "euler_003.clj",
+							"syntax": "Packages/Clojure/Clojure.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "euler/euler_004.clj",
+					"settings":
+					{
+						"buffer_size": 489,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								489,
+								489
+							]
+						],
+						"settings":
+						{
+							"auto_name": "euler_004.clj",
+							"syntax": "Packages/Clojure/Clojure.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "euler/euler_005.clj",
+					"settings":
+					{
+						"buffer_size": 742,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								742,
+								742
+							]
+						],
+						"settings":
+						{
+							"auto_name": "euler_005.clj",
+							"syntax": "Packages/Clojure/Clojure.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
 			]
 		}
 	],
@@ -931,13 +1124,17 @@
 		"height": 500.0,
 		"selected_items":
 		[
+			[
+				"",
+				"/Users/alde/Documents/projects/rubygame.sublime-project"
+			]
 		],
 		"width": 380.0
 	},
 	"show_minimap": true,
 	"show_open_files": true,
-	"show_tabs": false,
+	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 193.0,
+	"side_bar_width": 197.0,
 	"status_bar_visible": true
 }
