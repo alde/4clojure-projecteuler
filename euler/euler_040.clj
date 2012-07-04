@@ -7,40 +7,16 @@
 ;
 ; If dn represents the nth digit of the fractional part, find the value of
 ; the following expression.
+;
+; d1 * d10 * d100 * d1000 * d10000 * d100000 * d1000000
 
-(ns euler
-    (:use clojure.test))
+(defn to-int [x] (Integer/parseInt (str x)))
 
-; Build a list of integers. Since we only want the fraction part, might aswell
-; ignore the decimals
-(defn upto [limit] (for [b (range 1 (+ limit 5))] b))
+(defn euler-40 [limit]
+  (let [st (apply str (doall (range 1 (inc limit))))]
+    (loop [pasition limit result 1]
+      (if (= pasition 1)
+        result
+        (recur (quot pasition 10) (* result (to-int (nth st (dec pasition)))))))))
 
-; Convert a list of separate ints to a single string
-(defn to-string [li] (apply str li))
-
-; Get the n:th character of the string
-(defn get-nth [string n] (str (.charAt string n)))
-
-; start building the string
-(defn
-    ^{:test #(is (= (digit 12) "1"))}
-    digit [n] (get-nth (to-string (upto n)) n))
-
-; Parse a string to an int
-(defn to-int [c] (Integer/parseInt (to-string (digit (dec c)))))
-
-; Run any tests
-(run-tests)
-
-; print the result
-(prn
-    (*
-        (to-int 1)
-        (to-int 10)
-        (to-int 100)
-        (to-int 1000)
-        (to-int 10000)
-        (to-int 100000)
-        (to-int 1000000)
-    )
-)
+(prn (euler-40 1000000))
