@@ -14,9 +14,9 @@
 
 (defn euler-40 [limit]
   (let [st (apply str (doall (range 1 (inc limit))))]
-    (loop [pasition limit result 1]
-      (if (= pasition 1)
+    (loop [position limit result 1]
+      (if (= position 1)
         result
-        (recur (quot pasition 10) (* result (to-int (nth st (dec pasition)))))))))
+        (recur (quot position 10) (* result (to-int (nth st (dec position)))))))))
 
 (prn (euler-40 1000000))
