@@ -8,25 +8,23 @@
 (ns euler
     (:use clojure.test))
 
-(defn triplet [a p]
-    (/ (- (* p p) (* 2 p a)) (- (* 2 p) (* 2 a))))
-
 (defn
     ^{:test #(is (= 3 (count-solutions 120)))}
     count-solutions [p]
         (count
             (for [a (range 1 (int (/ p 3)))
                 :when (zero? (rem (* p (- p (* 2 a))) (* 2 (- p a))))]
-                (triplet a p))))
+                :valid)))
+
+(def memo-count (memoize count-solutions))
 
 (defn create-map [limit]
     (let [s #{}]
     (into s (for [a (range 1 (inc limit))
-        :when (not (zero? (count-solutions a)))]
-        [a (count-solutions a)]))))
+        :when (not (zero? (memo-count a)))]
+        [a (memo-count a)]))))
 
-(defn
-    problem-039 [limit] (create-map limit))
+(defn problem-039 [limit] (create-map limit))
 
 (defn reverse-map [m]
   (into {} (map (fn [[a b]] [b a]) m)))
